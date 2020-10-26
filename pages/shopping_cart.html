@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+</head>
+<body>
+    <div class="main-content">
+        <header>
+            <div class="container-fluid">
+                <nav class="navbar navbar-top navbar-expand-md navbar-dark">
+                    <a class="navbar-brand font-weight-bold" href="#">Limpio y bueno</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-cube mr-1" aria-hidden="true"></i>
+                                    Tus negocios
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Ordenes</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link nav-shopping-cart" href="./pages/shopping_cart.html">
+                                    <span class="badge badge-pill badge-light">10</span>
+                                    <i class="fa fa-shopping-cart"></i>
+                                    Carrito
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown nav-profile">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img class="profile-image" src="../assets/images/profile-img.png" alt="">
+                                    Nani Nario
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Perfil</a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-lock" aria-hidden="true"></i>
+                                        Salir
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="sub-header d-flex align-items-center">
+            <div class="container-fluid d-flex align-items-center">
+                <div class="header-form">
+                    <h1 class="display-2 text-white mb-3">
+                        <i class="fa fa-shopping-cart mr-2"></i>
+                        Carrito de compras
+                    </h1>
+                    <h6 class="text-light">
+                        Estas por comprar en:
+                        <b style="text-decoration: underline;">Limpieza fácil SAS</b>
+                    </h6>
+                    <br/>
+                </div>
+                <div class="header-button">
+                    <a href="" class="btn btn-new btn-yellow fadeUp d-flex align-items-center justify-content-center">
+                        <i class="fa fa-check mr-2"></i>
+                        Finalizar compra
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="wrap-content">
+            <div class="content-normal">
+                <form>
+                    <div class="shopping-card">
+                        <div class="shopping-card-img">
+                            <img src="../assets/images/unnamed.jpg" alt="">
+                        </div>
+                        <div class="shopping-card-name-product">
+                            <h6>Nombre del producto</h6>
+                            <p>Lavado de sofa</p>
+                        </div>
+                        <div class="shopping-card-price-product">
+                            <h6>Precio por unidad</h6>
+                            <p>$ 50.000 COP</p>
+                        </div>
+                        <div class="shopping-card-quantity-product">
+                            <h6>Cantidad</h6>
+                            <input type="number" name="" id="" min="0" onkeyup="if(this.value<0){this.value= this.value * -1}">
+                        </div>
+                        <div class="shopping-card-total-product">
+                            <h6>Subtotal</h6>
+                            <p>$ 50.000 COP</p>
+                        </div>
+                        <div class="shopping-card-delete-product">
+                            <div class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                                Eliminar
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shopping-card">
+                        <div class="shopping-card-img">
+                            <img src="../assets/images/unnamed.jpg" alt="">
+                        </div>
+                        <div class="shopping-card-name-product">
+                            <h6>Nombre del producto</h6>
+                            <p>Lavado de sofa</p>
+                        </div>
+                        <div class="shopping-card-price-product">
+                            <h6>Precio por unidad</h6>
+                            <p>$ 50.000 COP</p>
+                        </div>
+                        <div class="shopping-card-quantity-product">
+                            <h6>Cantidad</h6>
+                            <input type="number" name="" id="" min="0" onkeyup="if(this.value<0){this.value= this.value * -1}">
+                        </div>
+                        <div class="shopping-card-total-product">
+                            <h6>Subtotal</h6>
+                            <p>$ 50.000 COP</p>
+                        </div>
+                        <div class="shopping-card-delete-product">
+                            <div class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                                Eliminar
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shopping-card">
+                        <div class="shopping-card-img">
+                            <img src="../assets/images/unnamed.jpg" alt="">
+                        </div>
+                        <div class="shopping-card-name-product">
+                            <h6>Nombre del producto</h6>
+                            <p>Lavado de sofa</p>
+                        </div>
+                        <div class="shopping-card-price-product">
+                            <h6>Precio por unidad</h6>
+                            <p>$ 50.000 COP</p>
+                        </div>
+                        <div class="shopping-card-quantity-product">
+                            <h6>Cantidad</h6>
+                            <input type="number" name="" id="" min="0" onkeyup="if(this.value<0){this.value= this.value * -1}">
+                        </div>
+                        <div class="shopping-card-total-product">
+                            <h6>Subtotal</h6>
+                            <p>$ 50.000 COP</p>
+                        </div>
+                        <div class="shopping-card-delete-product">
+                            <div class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                                Eliminar
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/bootstrap/js/jquery.js"></script>
+    <script src="./assets/bootstrap/js/popper.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

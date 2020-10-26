@@ -22,6 +22,15 @@ header .navbar.navbar-dark button.navbar-toggler > i {
     font-size: 24px;
 }
 
+header .navbar.navbar.navbar-dark ul.navbar-nav li a:hover {
+    text-decoration: underline;
+}
+
+header .navbar.navbar.navbar-dark ul.navbar-nav .nav-shopping-cart span {
+    line-height: 1.5 !important;
+    border-radius: 30rem;
+}
+
 @media (min-width: 768px) {
     header .navbar ul.navbar-nav li button {
         color: #fff;

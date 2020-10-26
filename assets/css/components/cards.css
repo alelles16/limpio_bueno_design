@@ -1,3 +1,5 @@
+/* Service Card */
+
 .card-bg {
     border: none;
     padding: 24px;
@@ -40,4 +42,67 @@
 .business-card .business-info > a:hover,
 .business-card .business-info > a:focus {
     color: #ffc529;
+}
+
+/* Shopping card */
+.shopping-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopping-card:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.shopping-card > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.shopping-card .shopping-card-img img {
+    width: 84px;
+    height: 84px;
+    border-radius: .4em;
+}
+
+@media screen and (max-width: 992px) {
+    .shopping-card:not(:last-child) {
+        border-bottom: 1px solid #dbdbdb;
+    }
+}
+
+@media screen and (min-width: 543px) and (max-width: 992px) {
+    .shopping-card .shopping-card-img {
+        width: auto;
+    }
+    .shopping-card .shopping-card-name-product,
+    .shopping-card .shopping-card-price-product {
+        width: calc(50% - 84px);
+    }
+    .shopping-card .shopping-card-quantity-product,
+    .shopping-card .shopping-card-total-product,
+    .shopping-card .shopping-card-delete-product {
+        padding-top: 16px;
+        width: 30%;
+        padding-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 542px) {
+    .shopping-card .shopping-card-img {
+        width: auto;
+    }
+    .shopping-card .shopping-card-name-product {
+        width: calc(100% - 106px);
+    }
+    .shopping-card .shopping-card-price-product,
+    .shopping-card .shopping-card-quantity-product,
+    .shopping-card .shopping-card-total-product,
+    .shopping-card .shopping-card-delete-product {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
 }

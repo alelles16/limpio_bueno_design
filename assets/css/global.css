@@ -18,6 +18,12 @@ body {
     min-height: 100vh;
 }
 
+input:focus,
+input:active,
+input:hover {
+    outline: none;
+}
+
 a:hover,
 a:focus {
     text-decoration: none;
@@ -72,6 +78,17 @@ a.text-yellow:focus {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin-bottom: 1.5rem;
+    min-height: calc(100vh - 240px);
+}
+
+#wrap-content .content-normal {
+    background-color: #fff;
+    height: 100%;
+    border-radius: .6em !important;
+    padding: 24px;
+    box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03);
+    display: block;
+    margin-bottom: 1.5rem;
 }
 
 @media (max-width: 768px) {
@@ -85,4 +102,27 @@ a.text-yellow:focus {
         padding-right: 40px !important;
         padding-left: 40px !important;
     }
+}
+
+.main-content #button-shopping-cart .floating-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    bottom: 16px;
+    right: 16px;
+    color: #FFF;
+    border-radius: 50% !important;
+    text-align: center;
+    font-size: 24px;
+}
+
+.main-content #button-shopping-cart .floating-button > span {
+    position: absolute;
+    right: -8px;
+    background-color: #f55a54;
+    color: #fff;
+    font-size: 12px;
 }
